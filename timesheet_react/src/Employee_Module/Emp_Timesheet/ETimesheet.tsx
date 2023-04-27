@@ -463,7 +463,6 @@ function AddTimesheet() {
       const response = await axios.post("/api/Employee/Image", formData1);
       console.log(response.data.imagePath);
       const dataToSave = {
-        Employee_Id: employee_Id,
         ImagePathTimesheet: imagePath,
         ImagePathUpload: response.data.imagePath,
       };
