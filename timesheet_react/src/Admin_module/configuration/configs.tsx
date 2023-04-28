@@ -627,14 +627,12 @@ export function Config() {
 
   //get active, Inactive and all employees
   function handleOptionChange(value: any) {
-    // setSelectedRowKeys([]);
     setSelectedOption(value);
     getData(value);
   }
 
   useEffect(() => {
     getData(selectedOption);
-    setSelectedRowKeys([]);
   }, [selectedTab]);
 
   //Deactivate employees
